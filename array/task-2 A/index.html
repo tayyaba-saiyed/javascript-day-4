@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+</head>
+<body>
+    <button onclick="cart()">cart</button>
+    <script>
+        function cart() {
+
+            const cartItems = [{ name: "Laptop", price: 999.99 },   { name: "Headphones", price: 149.95 }, { name: "Mouse", price: 29.99 }];
+            let sum = 0;
+
+            for (let i = 0; i < cartItems.length; i++) {
+                sum = sum + cartItems[i].price;
+                
+            }
+            console.log("total" , sum);
+            
+        }
+    </script>
+</body>
+</html>

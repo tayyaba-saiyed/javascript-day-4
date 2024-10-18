@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change font</title>
+</head>
+<style>
+   
+</style>
+<body>
+    <div >
+        <ul>
+            <li id="changeFont1" onclick="fontItalic('changeFont1')">Bread</li>
+            <li id="changeFont2" onclick="fontItalic('changeFont2')">Milk</li>
+            <li id="changeFont3" onclick="fontItalic('changeFont3')">Butter</li>
+            <li id="changeFont4" onclick="fontItalic('changeFont4')">Apple</li>
+            <li id="changeFont5" onclick="fontItalic('changeFont5')">Jam</li>
+        </ul>
+    </div>
+    <script>
+        
+        function fontItalic(id) {
+            const element = document.getElementById(id);
+            element.style.fontWeight = "bold";
+        }
+
+        console.log(fontItalic);
+    </script>
+</body>
+</html>

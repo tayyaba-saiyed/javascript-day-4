@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 button 2 text</title>
+</head>
+
+<body>
+    <button type="button" onclick="btnshow('item1', 'item2')">click ME</button>
+    <button type="button" onclick="btnshowTwo('item2')">click ME 2</button>
+    <button type="button" onclick="btnshowThree('item1')">click ME 3</button>
+    <div id="item1" style="display: none;">
+        <input type="text">
+    </div>
+    <div id="item2" style="display: none;">
+        <input type="text">
+    </div>
+
+    <script>
+        function btnshow(id1, id2) {
+
+            var element = document.getElementById(id1);
+            element.style.display = (element.style.display == 'block') ? 'none' : 'block';
+            if (id2) {
+                var elementTwo = document.getElementById(id2);
+                elementTwo.style.display = (elementTwo.style.display == 'block') ? 'none' : 'block';
+
+            }
+        }
+        function btnshowTwo(id) {
+            var element = document.getElementById(id);
+            element.style.display = (element.style.display == 'block') ? 'none' : 'block';
+            
+        }
+        function btnshowThree(id) {
+            var element = document.getElementById(id);
+            element.style.display = (element.style.display == 'block') ? 'none' : 'block';
+            
+        }
+    </script>
+</body>
+
+</html>
